@@ -95,6 +95,8 @@ const defaultProps: MenuProps = {
   translate: 0.0,
   /** use button role for items */
   useButtonRole: true,
+  /** use tabindex for menu-wrapper */
+  useTabindex: true,
   /** class for wrapper */
   wrapperClass: 'menu-wrapper',
   /** styles for wrapper */

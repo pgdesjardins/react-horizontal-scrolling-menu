@@ -1121,6 +1121,7 @@ export class ScrollMenu extends React.Component<MenuProps, MenuState> {
       menuClass,
       transition,
       useButtonRole,
+      useTabindex,
       wrapperClass,
       wrapperStyle,
       rtl,
@@ -1187,6 +1188,7 @@ export class ScrollMenu extends React.Component<MenuProps, MenuState> {
             itemClassActive={itemClassActive}
             inertiaScrolling={inertiaScrolling}
             useButtonRole={useButtonRole}
+            useTabindex={useTabindex}
             rtl={rtl}
           />
         </div>

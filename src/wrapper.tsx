@@ -85,6 +85,7 @@ interface InnerWrapperProps {
   itemClassActive: string;
   inertiaScrolling: boolean;
   useButtonRole: boolean;
+  useTabindex: boolean;
   rtl: boolean;
 }
 
@@ -200,6 +201,7 @@ export class InnerWrapper extends React.PureComponent<
       itemClassActive,
       inertiaScrolling,
       useButtonRole,
+      useTabindex,
       rtl,
     } = this.props;
 
@@ -231,7 +233,7 @@ export class InnerWrapper extends React.PureComponent<
             key={'menuItem-' + Item.key}
             style={itemStyle}
             onClick={Item.props.onClick()}
-            tabIndex={0}
+            tabIndex={useTabindex ? 0 : undefined}
             role={useButtonRole ? 'button' : undefined}
           >
             {Item}

@@ -31,6 +31,7 @@ interface MenuProps {
   translate: number;
   transition: number;
   useButtonRole: boolean;
+  useTabindex: boolean;
   wrapperClass: string;
   wrapperStyle: CSSProperties;
   innerWrapperStyle: CSSProperties;
